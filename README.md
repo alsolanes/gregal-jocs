@@ -16,6 +16,24 @@ C:\dev\gregal-jocs   (this repository)
 
 `go.mod` has `replace gregal => ../gregal`.
 
+## Its own profile
+
+Gregal Jocs shares nothing with Gregal on disk, and both run at the same time:
+
+| | Gregal | Gregal Jocs |
+|---|---|---|
+| config, `auth.yaml` keys, memory, commands, user state | `~/.config/gregal` | `~/.config/gregal-jocs` |
+| data: sessions, accounts, passwords, tokens, jobs, service files | `~/.local/share/gregal` | `~/.local/share/gregal-jocs` |
+| service lock / descriptor, default port | `service.lock` / `service.json`, 8097 | `service-jocs.lock` / `service-jocs.json`, 8197 |
+| OS config / cache subfolders (`os.UserConfigDir`, `os.UserCacheDir`) | `gregal` | `gregal-jocs` |
+
+`GREGAL_DATA_DIR`, `GREGAL_AUTH`, `GREGAL_MEMORY` and `--config` still
+override it. It does not run Gregal's background work (scheduled jobs,
+Corner, apps, tunnels). Its league keeps its own members and teams
+(`server/teams.go`) and never reads Gregal's winds. On first run with no
+working model, `/jocs/` offers once to copy Gregal's provider, model and key
+(`/api/jocs/model-import`; Gregal's files are only read).
+
 ## Layout
 
 | Folder | What |
