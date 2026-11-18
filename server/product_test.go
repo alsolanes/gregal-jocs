@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"gregal/internal/web"
+	"gregal/host/web"
 )
 
 func get(t *testing.T, h http.Handler, path string) *httptest.ResponseRecorder {
@@ -77,11 +77,17 @@ func TestPluginArenaApagadaRutes404(t *testing.T) {
 func TestContracteJocs(t *testing.T) {
 	s, _ := companionTestServer(t)
 	routes := s.host.(*web.Server).Hub().APIRoutes()
-	raw, err := os.ReadFile("../../docs/api-contract.md")
+	// Les rutes de Gregal surten al contracte de Gregal (el repositori del
+	// costat) i les dels jocs, al d'aquest repositori.
+	gregalDoc, err := os.ReadFile("../../gregal/docs/api-contract.md")
 	if err != nil {
 		t.Fatal(err)
 	}
-	doc := strings.ReplaceAll(string(raw), "\r\n", "\n")
+	raw, err := os.ReadFile("../docs/api-contract.md")
+	if err != nil {
+		t.Fatal(err)
+	}
+	doc := strings.ReplaceAll(string(gregalDoc)+"\n"+string(raw), "\r\n", "\n")
 	i := strings.Index(doc, "\n## Gregal Jocs")
 	if i < 0 {
 		t.Fatal("falta la secció «## Gregal Jocs» a docs/api-contract.md")

@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"gregal/jocs/arena"
+	"gregal-jocs/arena"
 )
 
 // seasonMatch és un partit acabat de mentida, amb els moments ja fets.

@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"gregal/internal/web"
-	"gregal/jocs/arena"
+	"gregal/host/web"
+	"gregal-jocs/arena"
 )
 
 // arenaStub fa de model: decideix, escriu bots i dona informes.

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"gregal/internal/web"
+	"gregal/host/web"
 )
 
 // La web de Gregal Jocs: el nom de la competició el posa l'organitzador

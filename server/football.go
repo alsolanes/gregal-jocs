@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"gregal/jocs/football"
+	"gregal-jocs/football"
 )
 
 const footballMaxGamesPerDay = 3

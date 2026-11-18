@@ -26,7 +26,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gregal/jocs/football"
+	"gregal-jocs/football"
 )
 
 // Member és un membre de la lliga: un personatge amb nom, cara i veu.

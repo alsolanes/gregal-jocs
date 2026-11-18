@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"gregal/jocs/football"
+	"gregal-jocs/football"
 )
 
 // Sense membres, el magatzem en crea el joc per defecte i el desa; si n'hi

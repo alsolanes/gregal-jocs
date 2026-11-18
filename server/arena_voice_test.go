@@ -16,7 +16,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"gregal/internal/web"
+	"gregal/host/web"
 	"time"
 )
 

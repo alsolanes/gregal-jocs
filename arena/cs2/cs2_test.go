@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"gregal/jocs/arena"
+	"gregal-jocs/arena"
 )
 
 func play(seed int64, d [2]arena.Decide) (*Match, []arena.Event) {

@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"gregal/jocs/arena"
+	"gregal-jocs/arena"
 )
 
 const (

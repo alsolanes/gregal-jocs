@@ -12,8 +12,8 @@ import (
 	"sync"
 	"testing"
 
-	"gregal/jocs/arena"
-	"gregal/jocs/football"
+	"gregal-jocs/arena"
+	"gregal-jocs/football"
 )
 
 // ---- lectura de la Situation (només el que el model també veu) ----

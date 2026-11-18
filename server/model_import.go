@@ -22,11 +22,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"gregal/internal/config"
-	"gregal/internal/llm"
-	"gregal/internal/profile"
-	"gregal/internal/session"
-	"gregal/internal/web"
+	"gregal/host/config"
+	"gregal/host/llm"
+	"gregal/host/profile"
+	"gregal/host/session"
+	"gregal/host/web"
 )
 
 // modelImportFile és on queda apuntat que l'oferta ja s'ha fet servir.

@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"gregal/internal/config"
-	"gregal/internal/profile"
-	"gregal/internal/web"
+	"gregal/host/config"
+	"gregal/host/profile"
+	"gregal/host/web"
 )
 
 // jocsProfile posa un home temporal amb el perfil de Gregal (config.yaml i

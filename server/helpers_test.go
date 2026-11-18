@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"gregal/internal/config"
-	"gregal/internal/web"
+	"gregal/host/config"
+	"gregal/host/web"
 )
 
 // Les eines de prova que els jocs feien servir d'internal/web (goal_api_test,

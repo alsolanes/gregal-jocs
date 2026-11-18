@@ -28,12 +28,12 @@ import (
 	"sync"
 	"time"
 
-	"gregal/internal/llm"
-	"gregal/internal/web"
-	"gregal/jocs/arena"
-	_ "gregal/jocs/arena/cs2"
-	_ "gregal/jocs/arena/lol"
-	_ "gregal/jocs/arena/nfl"
+	"gregal/host/llm"
+	"gregal/host/web"
+	"gregal-jocs/arena"
+	_ "gregal-jocs/arena/cs2"
+	_ "gregal-jocs/arena/lol"
+	_ "gregal-jocs/arena/nfl"
 )
 
 const (

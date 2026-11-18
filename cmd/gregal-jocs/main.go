@@ -2,12 +2,12 @@
 // jocs (l'Arena i la lliga dels vents) registrats, i --open obre /jocs/.
 // L'app d'escriptori Gregal Jocs l'engega com a backend.
 //
-//	go build -o gregal-jocs ./jocs/cmd/gregal-jocs
+//	go build -o gregal-jocs ./cmd/gregal-jocs
 package main
 
 import (
-	"gregal/internal/cli"
-	_ "gregal/jocs/server" // registra el producte Gregal Jocs (init)
+	"gregal/host/cli"
+	_ "gregal-jocs/server" // registra el producte Gregal Jocs (init)
 )
 
 // version es fixa en compilar: go build -ldflags "-X main.version=vX.Y.Z".
@@ -21,7 +21,7 @@ var repoDir string
 func main() {
 	cli.Main(cli.Build{
 		Version: version, RepoDir: repoDir,
-		Package:  "./jocs/cmd/gregal-jocs",
+		Package:  "./cmd/gregal-jocs",
 		OpenPath: "/jocs/",
 		// El seu perfil (~/.config/gregal-jocs, ~/.local/share/gregal-jocs),
 		// la seva identitat de servei (service-jocs.json) i el seu port: una

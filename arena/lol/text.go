@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gregal/jocs/arena"
+	"gregal-jocs/arena"
 )
 
 func (m *match) prompt(i int) arena.Prompt {

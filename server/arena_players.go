@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"gregal/jocs/arena"
+	"gregal-jocs/arena"
 )
 
 // La temporada vista per jugadors: el perfil de cadascú (Elo i evolució,

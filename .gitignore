@@ -1,0 +1,16 @@
+config.yaml
+dist/
+/gregal-jocs
+desktop/node_modules/
+desktop/dist/
+desktop/backend-jocs/
+desktop/output/
+*.exe
+*.exe~
+/output/
+.env
+.env.*
+!.env.example
+deploy/backups/
+.claude/
+**/.local/

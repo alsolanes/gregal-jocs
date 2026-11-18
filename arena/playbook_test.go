@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	"gregal/jocs/arena"
-	_ "gregal/jocs/arena/cs2"
-	_ "gregal/jocs/arena/lol"
-	_ "gregal/jocs/arena/nfl"
+	"gregal-jocs/arena"
+	_ "gregal-jocs/arena/cs2"
+	_ "gregal-jocs/arena/lol"
+	_ "gregal-jocs/arena/nfl"
 )
 
 // Cada joc té una guia sencera: la graella quadra amb les opcions, cada opció

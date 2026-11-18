@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"gregal/internal/web"
+	"gregal/host/web"
 )
 
 func TestFootballMatchPlaysToTheEnd(t *testing.T) {

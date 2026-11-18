@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gregal/jocs/arena"
+	"gregal-jocs/arena"
 )
 
 // Polítiques de prova escrites a mà. Totes llegeixen NOMÉS el text de la

@@ -4,9 +4,9 @@ import (
 	"context"
 	"net/http"
 
-	"gregal/internal/config"
-	"gregal/internal/llm"
-	"gregal/internal/web"
+	"gregal/host/config"
+	"gregal/host/llm"
+	"gregal/host/web"
 )
 
 // Host és el que els jocs fan servir del servidor d'un usuari (el de

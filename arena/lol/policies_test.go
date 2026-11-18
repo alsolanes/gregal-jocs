@@ -17,7 +17,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gregal/jocs/arena"
+	"gregal-jocs/arena"
 )
 
 type policy func(m *match, side int, p arena.Prompt) json.RawMessage

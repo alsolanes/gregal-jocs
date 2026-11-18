@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"gregal/jocs/arena"
+	"gregal-jocs/arena"
 )
 
 // arenaFakeMatches desa n partits acabats d'uns 150 KB cadascun (com els de

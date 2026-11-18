@@ -18,8 +18,8 @@ import (
 	"sync"
 	"time"
 
-	"gregal/jocs/arena"
-	"gregal/jocs/arena/cs2"
+	"gregal-jocs/arena"
+	"gregal-jocs/arena/cs2"
 )
 
 type arenaLiveRun struct {
