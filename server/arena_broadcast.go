@@ -21,8 +21,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gregal/host/web"
 	"gregal-jocs/arena"
+	"gregal/host/web"
 )
 
 type arenaLine struct {

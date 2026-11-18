@@ -64,7 +64,9 @@ func (x *texts) defuse(h string, ninja bool) string {
 	return fmt.Sprintf(x.pick("%s buida el Megaglobus", "%s drains the Mega Balloon"), h)
 }
 
-func (x *texts) explode() string { return x.pick("El Megaglobus esclata: tothom xop!", "The Mega Balloon bursts: everyone soaked!") }
+func (x *texts) explode() string {
+	return x.pick("El Megaglobus esclata: tothom xop!", "The Mega Balloon bursts: everyone soaked!")
+}
 
 var reasonCa = map[string]string{"elim": "tots remullats", "bomb": "esclat del globus", "defuse": "globus buidat", "time": "temps"}
 var reasonEn = map[string]string{"elim": "all splashed", "bomb": "balloon burst", "defuse": "balloon drained", "time": "time"}

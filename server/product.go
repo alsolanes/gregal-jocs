@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"gregal/host/web"
 	jocsweb "gregal-jocs/web"
+	"gregal/host/web"
 )
 
 // Gregal Jocs com a producte del servidor de Gregal (internal/web/product.go):

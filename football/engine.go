@@ -158,13 +158,13 @@ func avg(ps []*Player, f func(Attrs) int) float64 {
 
 // Plan és el pla de joc d'un entrenador per a un quart.
 type Plan struct {
-	PassRate   float64 `json:"pass_rate"`   // 0..1, quant passa en situació neutra (NFL ~0.58)
-	DeepShots  float64 `json:"deep_shots"`  // 0..1, part de passades llargues (~0.18)
-	Aggression float64 `json:"aggression"`  // 0..1, anar a per la 4a i el 2 punts
-	Blitz      float64 `json:"blitz"`       // 0..1, quant envia pressió extra (~0.25)
-	Tempo      float64 `json:"tempo"`       // 0..1, atac sense pausa
-	Focus      string  `json:"focus"`       // id d'un jugador a qui buscar més
-	Note       string  `json:"note"`        // la frase de l'entrenador
+	PassRate   float64 `json:"pass_rate"`  // 0..1, quant passa en situació neutra (NFL ~0.58)
+	DeepShots  float64 `json:"deep_shots"` // 0..1, part de passades llargues (~0.18)
+	Aggression float64 `json:"aggression"` // 0..1, anar a per la 4a i el 2 punts
+	Blitz      float64 `json:"blitz"`      // 0..1, quant envia pressió extra (~0.25)
+	Tempo      float64 `json:"tempo"`      // 0..1, atac sense pausa
+	Focus      string  `json:"focus"`      // id d'un jugador a qui buscar més
+	Note       string  `json:"note"`       // la frase de l'entrenador
 }
 
 // DefaultPlan és un pla neutre (el que fa un entrenador sense model).
@@ -236,27 +236,27 @@ type Stat struct {
 
 // Game és un partit en marxa.
 type Game struct {
-	Teams     [2]*Team
-	Plans     [2]Plan
-	Plays     []Play
-	Stats     map[string]*Stat
-	Score     [2]int
-	Quarter   int
-	Clock     int
-	Poss      int
-	Spot      int
-	Down      int
-	Dist      int
-	Timeouts  [2]int
-	Drive     int
-	Over      bool
-	rng       *rand.Rand
-	recv2nd   int  // qui rep a la segona part
-	warned    bool // avís dels dos minuts ja donat en aquesta part
-	otPoss    [2]bool
-	Lang      string
-	kickNext  bool // toca xut d'inici (després de puntuar o començar part)
-	afterTD   bool // toca PAT / 2 punts
+	Teams    [2]*Team
+	Plans    [2]Plan
+	Plays    []Play
+	Stats    map[string]*Stat
+	Score    [2]int
+	Quarter  int
+	Clock    int
+	Poss     int
+	Spot     int
+	Down     int
+	Dist     int
+	Timeouts [2]int
+	Drive    int
+	Over     bool
+	rng      *rand.Rand
+	recv2nd  int  // qui rep a la segona part
+	warned   bool // avís dels dos minuts ja donat en aquesta part
+	otPoss   [2]bool
+	Lang     string
+	kickNext bool // toca xut d'inici (després de puntuar o començar part)
+	afterTD  bool // toca PAT / 2 punts
 
 	// Mode extern (Arena): cada jugada de línia la criden l'atac i la defensa.
 	External bool

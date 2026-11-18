@@ -6,8 +6,8 @@
 package main
 
 import (
-	"gregal/host/cli"
 	_ "gregal-jocs/server" // registra el producte Gregal Jocs (init)
+	"gregal/host/cli"
 )
 
 // version es fixa en compilar: go build -ldflags "-X main.version=vX.Y.Z".

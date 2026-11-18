@@ -28,12 +28,12 @@ import (
 	"sync"
 	"time"
 
-	"gregal/host/llm"
-	"gregal/host/web"
 	"gregal-jocs/arena"
 	_ "gregal-jocs/arena/cs2"
 	_ "gregal-jocs/arena/lol"
 	_ "gregal-jocs/arena/nfl"
+	"gregal/host/llm"
+	"gregal/host/web"
 )
 
 const (
@@ -2376,14 +2376,14 @@ func (*arenaSkip) UnmarshalJSON([]byte) error { return nil }
 // camps de fora tapen els de l'arenaMatch de dins.
 type arenaFileHead struct {
 	*arenaMatch
-	Events       arenaSkip `json:"events"`
-	Decisions    arenaSkip `json:"decisions"`
-	Meta         arenaSkip `json:"meta"`
-	Lines        arenaSkip `json:"lines"`
-	Analysis     arenaSkip `json:"analysis"`
+	Events       arenaSkip   `json:"events"`
+	Decisions    arenaSkip   `json:"decisions"`
+	Meta         arenaSkip   `json:"meta"`
+	Lines        arenaSkip   `json:"lines"`
+	Analysis     arenaSkip   `json:"analysis"`
 	MD           arenaMDSigs `json:"md"`
-	Preview      arenaSkip `json:"preview"`
-	PreviewAudio arenaSkip `json:"preview_audio"`
+	Preview      arenaSkip   `json:"preview"`
+	PreviewAudio arenaSkip   `json:"preview_audio"`
 	Feedback     [2]*struct {
 		Scores map[string]int `json:"scores"`
 	} `json:"feedback"`

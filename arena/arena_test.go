@@ -7,12 +7,12 @@ import (
 
 func TestParseAnswerNeverReturnsInvalidJSON(t *testing.T) {
 	cases := map[string]string{
-		`{"decision":{"play":"run_inside"},"why":"x","rule":"r"}`: `{"play":"run_inside"}`,
+		`{"decision":{"play":"run_inside"},"why":"x","rule":"r"}`:                         `{"play":"run_inside"}`,
 		"Sure!\n```json\n{\"decision\": {\"call\": \"cover2\",}, \"why\": \"deep\"}\n```": `{"call": "cover2"}`,
-		`{"play":"screen","target":"rb"}`:                            `{"play":"screen","target":"rb"}`,
-		`{'decision': {'play': 'punt'}}`:                             `{"play": "punt"}`,
-		`no json at all`:                                             ``,
-		`{"decision": {"play": "run" "x"}}`:                          ``,
+		`{"play":"screen","target":"rb"}`:                                                 `{"play":"screen","target":"rb"}`,
+		`{'decision': {'play': 'punt'}}`:                                                  `{"play": "punt"}`,
+		`no json at all`:                                                                  ``,
+		`{"decision": {"play": "run" "x"}}`:                                               ``,
 	}
 	for in, want := range cases {
 		a := ParseAnswer(in)
